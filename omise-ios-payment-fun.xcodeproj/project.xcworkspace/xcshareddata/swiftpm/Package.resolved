@@ -1,0 +1,51 @@
+{
+  "originHash" : "f4e91878ed6604db81923999d921d000d20a7b3a002c1132d71be59f1ccf7d18",
+  "pins" : [
+    {
+      "identity" : "omise-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/omise/omise-ios.git",
+      "state" : {
+        "revision" : "2988ee07a318cdedd5f1a517b6ff769d8e139758",
+        "version" : "4.27.1"
+      }
+    },
+    {
+      "identity" : "swift2d",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/richardpiazza/Swift2D.git",
+      "state" : {
+        "revision" : "f9e993c0075013339c5c132ab01fc78750b8774f",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "swiftsvg",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/richardpiazza/SwiftSVG.git",
+      "state" : {
+        "revision" : "7238a601fc0e074543e3fa1b1912bf7afa9d32bf",
+        "version" : "0.11.0"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+        "version" : "5.0.2"
+      }
+    },
+    {
+      "identity" : "xmlcoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CoreOffice/XMLCoder.git",
+      "state" : {
+        "revision" : "b1e944cbd0ef33787b13f639a5418d55b3bed501",
+        "version" : "0.17.1"
+      }
+    }
+  ],
+  "version" : 3
+}

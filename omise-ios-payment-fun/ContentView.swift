@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import UIKit
+
 
 struct ContentView: View {
+    let paymentList: [PaymentType] = [
+        PaymentType(key: "credit-card", name: "Credit card", thumnail: UIImage(named: "ic_credit_card")!),
+        PaymentType(key: "promtpay", name: "QR Payment", thumnail: UIImage(named: "ic_qr_promptpay")!)
+    ]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView(content: {
+            VStack {
+                VStack {
+                    ListPaymentTypeView(paymentList: paymentList)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .navigationTitle("Omise Payment Type")
+        })
+        
     }
 }
 

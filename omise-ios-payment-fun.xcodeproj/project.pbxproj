@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19701F802C42C4DF00B083AC /* PromptPayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F7F2C42C4DF00B083AC /* PromptPayViewModel.swift */; };
+		19701F822C42DAA300B083AC /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F812C42DAA300B083AC /* PaymentService.swift */; };
+		19701F842C42E5B300B083AC /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F832C42E5B300B083AC /* BaseResponse.swift */; };
+		19701F862C42E80100B083AC /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F852C42E80100B083AC /* BaseApiService.swift */; };
+		19701F8C2C43038100B083AC /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F8B2C43038100B083AC /* SVGView.swift */; };
+		19701F952C430EDB00B083AC /* SwiftSVG in Frameworks */ = {isa = PBXBuildFile; productRef = 19701F942C430EDB00B083AC /* SwiftSVG */; };
+		19701F982C43282100B083AC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 19701F972C43282100B083AC /* SwiftyJSON */; };
+		19701F9B2C44099A00B083AC /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F9A2C44099A00B083AC /* CountdownView.swift */; };
+		19701F9E2C440E8600B083AC /* PaymentSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F9D2C440E8600B083AC /* PaymentSuccess.swift */; };
 		19FAC8382C41A8C10048471D /* omise_ios_payment_funApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8372C41A8C10048471D /* omise_ios_payment_funApp.swift */; };
 		19FAC83A2C41A8C10048471D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8392C41A8C10048471D /* ContentView.swift */; };
 		19FAC83C2C41A8C20048471D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FAC83B2C41A8C20048471D /* Assets.xcassets */; };
@@ -14,6 +23,17 @@
 		19FAC8492C41A8C20048471D /* omise_ios_payment_funTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8482C41A8C20048471D /* omise_ios_payment_funTests.swift */; };
 		19FAC8532C41A8C20048471D /* omise_ios_payment_funUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8522C41A8C20048471D /* omise_ios_payment_funUITests.swift */; };
 		19FAC8552C41A8C20048471D /* omise_ios_payment_funUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8542C41A8C20048471D /* omise_ios_payment_funUITestsLaunchTests.swift */; };
+		19FAC8632C41AA240048471D /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8622C41AA240048471D /* Payment.swift */; };
+		19FAC8672C41AB120048471D /* CellPaymentTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8662C41AB120048471D /* CellPaymentTypeView.swift */; };
+		19FAC8692C41AE370048471D /* ListPaymentTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8682C41AE370048471D /* ListPaymentTypeView.swift */; };
+		19FAC86C2C41B5D10048471D /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC86B2C41B5D10048471D /* CreditCardView.swift */; };
+		19FAC86F2C41B8F80048471D /* ColorBorderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC86E2C41B8F80048471D /* ColorBorderStyle.swift */; };
+		19FAC8732C41C96A0048471D /* PaymentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8722C41C96A0048471D /* PaymentDetailView.swift */; };
+		19FAC8752C4244E70048471D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8742C4244E70048471D /* ButtonStyle.swift */; };
+		19FAC8782C426BB60048471D /* PromptPayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8772C426BB60048471D /* PromptPayView.swift */; };
+		19FAC87D2C4279E30048471D /* OmiseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC87C2C4279E30048471D /* OmiseService.swift */; };
+		19FAC87F2C427A4A0048471D /* OmiseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 19FAC87E2C427A4A0048471D /* OmiseSDK */; };
+		19FAC8812C428D5E0048471D /* CreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8802C428D5E0048471D /* CreditCardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19701F7F2C42C4DF00B083AC /* PromptPayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPayViewModel.swift; sourceTree = "<group>"; };
+		19701F812C42DAA300B083AC /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		19701F832C42E5B300B083AC /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		19701F852C42E80100B083AC /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
+		19701F8B2C43038100B083AC /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
+		19701F9A2C44099A00B083AC /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		19701F9D2C440E8600B083AC /* PaymentSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccess.swift; sourceTree = "<group>"; };
 		19FAC8342C41A8C10048471D /* omise-ios-payment-fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "omise-ios-payment-fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FAC8372C41A8C10048471D /* omise_ios_payment_funApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = omise_ios_payment_funApp.swift; sourceTree = "<group>"; };
 		19FAC8392C41A8C10048471D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +71,16 @@
 		19FAC84E2C41A8C20048471D /* omise-ios-payment-funUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "omise-ios-payment-funUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FAC8522C41A8C20048471D /* omise_ios_payment_funUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = omise_ios_payment_funUITests.swift; sourceTree = "<group>"; };
 		19FAC8542C41A8C20048471D /* omise_ios_payment_funUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = omise_ios_payment_funUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19FAC8622C41AA240048471D /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		19FAC8662C41AB120048471D /* CellPaymentTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPaymentTypeView.swift; sourceTree = "<group>"; };
+		19FAC8682C41AE370048471D /* ListPaymentTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPaymentTypeView.swift; sourceTree = "<group>"; };
+		19FAC86B2C41B5D10048471D /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		19FAC86E2C41B8F80048471D /* ColorBorderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBorderStyle.swift; sourceTree = "<group>"; };
+		19FAC8722C41C96A0048471D /* PaymentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailView.swift; sourceTree = "<group>"; };
+		19FAC8742C4244E70048471D /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		19FAC8772C426BB60048471D /* PromptPayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPayView.swift; sourceTree = "<group>"; };
+		19FAC87C2C4279E30048471D /* OmiseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmiseService.swift; sourceTree = "<group>"; };
+		19FAC8802C428D5E0048471D /* CreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19701F982C43282100B083AC /* SwiftyJSON in Frameworks */,
+				19FAC87F2C427A4A0048471D /* OmiseSDK in Frameworks */,
+				19701F952C430EDB00B083AC /* SwiftSVG in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +111,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19701F8A2C43036300B083AC /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				19701F8B2C43038100B083AC /* SVGView.swift */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		19701F992C44097700B083AC /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				19701F9A2C44099A00B083AC /* CountdownView.swift */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
+		19701F9C2C440E7500B083AC /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				19701F9D2C440E8600B083AC /* PaymentSuccess.swift */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
 		19FAC82B2C41A8C10048471D = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +158,11 @@
 		19FAC8362C41A8C10048471D /* omise-ios-payment-fun */ = {
 			isa = PBXGroup;
 			children = (
+				19FAC87B2C4279CD0048471D /* ViewModel */,
+				19FAC87A2C4279C70048471D /* Service */,
+				19FAC86D2C41B8DF0048471D /* Style */,
+				19FAC8642C41AAE40048471D /* View */,
+				19FAC8612C41AA080048471D /* Model */,
 				19FAC8372C41A8C10048471D /* omise_ios_payment_funApp.swift */,
 				19FAC8392C41A8C10048471D /* ContentView.swift */,
 				19FAC83B2C41A8C20048471D /* Assets.xcassets */,
@@ -127,6 +196,90 @@
 			path = "omise-ios-payment-funUITests";
 			sourceTree = "<group>";
 		};
+		19FAC8612C41AA080048471D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC8622C41AA240048471D /* Payment.swift */,
+				19701F832C42E5B300B083AC /* BaseResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19FAC8642C41AAE40048471D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19701F9C2C440E7500B083AC /* Success */,
+				19701F992C44097700B083AC /* Countdown */,
+				19701F8A2C43036300B083AC /* SVG */,
+				19FAC8762C426B760048471D /* PromptPay */,
+				19FAC8712C41C9520048471D /* PaymentDetail */,
+				19FAC86A2C41B5AB0048471D /* CreditCard */,
+				19FAC8652C41AAF30048471D /* Cell */,
+				19FAC8682C41AE370048471D /* ListPaymentTypeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19FAC8652C41AAF30048471D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC8662C41AB120048471D /* CellPaymentTypeView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		19FAC86A2C41B5AB0048471D /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC86B2C41B5D10048471D /* CreditCardView.swift */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		19FAC86D2C41B8DF0048471D /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC86E2C41B8F80048471D /* ColorBorderStyle.swift */,
+				19FAC8742C4244E70048471D /* ButtonStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		19FAC8712C41C9520048471D /* PaymentDetail */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC8722C41C96A0048471D /* PaymentDetailView.swift */,
+			);
+			path = PaymentDetail;
+			sourceTree = "<group>";
+		};
+		19FAC8762C426B760048471D /* PromptPay */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC8772C426BB60048471D /* PromptPayView.swift */,
+			);
+			path = PromptPay;
+			sourceTree = "<group>";
+		};
+		19FAC87A2C4279C70048471D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC87C2C4279E30048471D /* OmiseService.swift */,
+				19701F812C42DAA300B083AC /* PaymentService.swift */,
+				19701F852C42E80100B083AC /* BaseApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		19FAC87B2C4279CD0048471D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19FAC8802C428D5E0048471D /* CreditCardViewModel.swift */,
+				19701F7F2C42C4DF00B083AC /* PromptPayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +296,11 @@
 			dependencies = (
 			);
 			name = "omise-ios-payment-fun";
+			packageProductDependencies = (
+				19FAC87E2C427A4A0048471D /* OmiseSDK */,
+				19701F942C430EDB00B083AC /* SwiftSVG */,
+				19701F972C43282100B083AC /* SwiftyJSON */,
+			);
 			productName = "omise-ios-payment-fun";
 			productReference = 19FAC8342C41A8C10048471D /* omise-ios-payment-fun.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +373,11 @@
 				Base,
 			);
 			mainGroup = 19FAC82B2C41A8C10048471D;
+			packageReferences = (
+				19FAC8702C41C4FA0048471D /* XCRemoteSwiftPackageReference "omise-ios" */,
+				19701F932C430EDB00B083AC /* XCRemoteSwiftPackageReference "SwiftSVG" */,
+				19701F962C43282100B083AC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 19FAC8352C41A8C10048471D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +420,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19701F9E2C440E8600B083AC /* PaymentSuccess.swift in Sources */,
+				19701F9B2C44099A00B083AC /* CountdownView.swift in Sources */,
+				19701F842C42E5B300B083AC /* BaseResponse.swift in Sources */,
 				19FAC83A2C41A8C10048471D /* ContentView.swift in Sources */,
+				19FAC8812C428D5E0048471D /* CreditCardViewModel.swift in Sources */,
+				19FAC8632C41AA240048471D /* Payment.swift in Sources */,
+				19FAC87D2C4279E30048471D /* OmiseService.swift in Sources */,
+				19701F862C42E80100B083AC /* BaseApiService.swift in Sources */,
+				19701F8C2C43038100B083AC /* SVGView.swift in Sources */,
+				19FAC8692C41AE370048471D /* ListPaymentTypeView.swift in Sources */,
 				19FAC8382C41A8C10048471D /* omise_ios_payment_funApp.swift in Sources */,
+				19FAC8672C41AB120048471D /* CellPaymentTypeView.swift in Sources */,
+				19FAC86C2C41B5D10048471D /* CreditCardView.swift in Sources */,
+				19FAC8752C4244E70048471D /* ButtonStyle.swift in Sources */,
+				19FAC8782C426BB60048471D /* PromptPayView.swift in Sources */,
+				19701F802C42C4DF00B083AC /* PromptPayViewModel.swift in Sources */,
+				19FAC8732C41C96A0048471D /* PaymentDetailView.swift in Sources */,
+				19701F822C42DAA300B083AC /* PaymentService.swift in Sources */,
+				19FAC86F2C41B8F80048471D /* ColorBorderStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +768,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19701F932C430EDB00B083AC /* XCRemoteSwiftPackageReference "SwiftSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardpiazza/SwiftSVG.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.11.0;
+			};
+		};
+		19701F962C43282100B083AC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		19FAC8702C41C4FA0048471D /* XCRemoteSwiftPackageReference "omise-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/omise/omise-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.27.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19701F942C430EDB00B083AC /* SwiftSVG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19701F932C430EDB00B083AC /* XCRemoteSwiftPackageReference "SwiftSVG" */;
+			productName = SwiftSVG;
+		};
+		19701F972C43282100B083AC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19701F962C43282100B083AC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		19FAC87E2C427A4A0048471D /* OmiseSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19FAC8702C41C4FA0048471D /* XCRemoteSwiftPackageReference "omise-ios" */;
+			productName = OmiseSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19FAC82C2C41A8C10048471D /* Project object */;
 }

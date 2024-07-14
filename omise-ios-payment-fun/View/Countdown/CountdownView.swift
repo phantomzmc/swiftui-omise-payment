@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct CountdownView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @State private var remainingTime: TimeInterval = 90 // 1 minute and 30 seconds in seconds
+
+  var body: some View {
+    VStack {
+//        Text("\(remainingTime.formatted(.format("mm:ss")))") // Format as m:ss
+//        .font(.largeTitle)
+//        .fontWeight(.bold)
+//      Button("Start Countdown") {
+//        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+//          if self.remainingTime > 0 {
+//            self.remainingTime -= 1
+//          } else {
+//            timer.invalidate() // Stop timer when it reaches 0
+//          }
+//        }
+//      }
     }
+  }
 }
 
 #Preview {

@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct CellPaymentTypeView: View {
+    let paymentType : PaymentType
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            Image(uiImage: paymentType.thumnail).resizable().aspectRatio(contentMode: .fill).frame(width: 20, height: 20)
+            
+            Text(paymentType.name)
+                .lineLimit(1).padding(.leading)
+            Spacer()
+        }
+        .padding(.all, 8)
     }
 }
 
 #Preview {
-    CellPaymentTypeView()
+    CellPaymentTypeView(paymentType:
+                            PaymentType(key: "credit-card", name: "Credit card", thumnail: UIImage(named: "ic_credit_card")!))
+    
 }

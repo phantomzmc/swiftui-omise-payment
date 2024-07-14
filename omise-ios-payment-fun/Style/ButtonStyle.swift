@@ -7,12 +7,23 @@
 
 import SwiftUI
 
-struct ButtonStyle: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct ButtonStyle: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
+    
+    func body(content: Content) -> some View {
+            content
+            .foregroundColor(colorScheme == .light ? .white : .black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(colorScheme == .light ? Color.blue : Color.white)
+                                )
+        }
 }
 
-#Preview {
-    ButtonStyle()
+extension View {
+    func addColorButtonStyle() -> some View {
+        modifier(ButtonStyle())
+    }
 }

@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ListPaymentTypeView: View {
+    let paymentList: [PaymentType]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List(paymentList) { paymentType in
+                NavigationLink(destination: PaymentDetailView(paymentType: paymentType)) {
+                    CellPaymentTypeView(paymentType: paymentType)
+                }
+            }
+            
+        }
     }
 }
 
 #Preview {
-    ListPaymentTypeView()
+    ListPaymentTypeView(paymentList:  [
+        PaymentType(key: "credit-card", name: "Credit card", thumnail: UIImage(named: "ic_credit_card")!),
+        PaymentType(key: "promtpay", name: "QR Payment", thumnail: UIImage(named: "ic_qr_promptpay")!)
+    ])
 }

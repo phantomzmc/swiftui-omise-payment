@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct ColorBorderStyle: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct ColorBorderStyle: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
+    
+    func body(content: Content) -> some View {
+        content
+            .padding(10)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(colorScheme == .light ? Color.gray : Color.gray, lineWidth: 0.5)
+            )
     }
 }
 
-#Preview {
-    ColorBorderStyle()
+extension View {
+    func addColorBorderStyle() -> some View {
+        modifier(ColorBorderStyle())
+    }
 }
