@@ -7,30 +7,53 @@
 
 import SwiftUI
 
+@MainActor
 struct CreditCardView: View {
     
     @StateObject private var viewModel = ViewModel()
+    @ObservedObject private var webViewModel: WebViewModel = WebViewModel(url: "https://www.google.com")
+    //    @StateObject private var appStateCreditCard = AppStateCreditCardViewModel()
     
     var body: some View {
         VStack {
-            TextField("Card holder name", text: $viewModel.cardHolderName).addColorBorderStyle()
-            TextField("Card Number", text: $viewModel.cardNumber).keyboardType(.numberPad).addColorBorderStyle()
-            HStack {
-                HStack {
-                    TextField("12", text: $viewModel.monthExpired)
-                    Text(" / ")
-                    TextField("2024", text: $viewModel.yearExpired)
-                }.addColorBorderStyle()
-                TextField("CVV", text: $viewModel.cvv).keyboardType(.numberPad).addColorBorderStyle()
+            if viewModel.isOpenWebView {
+                VStack {
+                    switch webViewModel.paymentCurrentPaymentStatus {
+                    case .pending:
+                        WebViewContainer(webViewModel: WebViewModel(url: viewModel.authUri))
+                        
+                    case .successful:
+                        PaymentSuccess()
+                    default:
+                        WebViewContainer(webViewModel: WebViewModel(url: viewModel.authUri))
+                    }
+                }.task {
+                    print(webViewModel.paymentCurrentPaymentStatus)
+                }
+                
+                
+            } else {
+                VStack {
+                    TextField("Card holder name", text: $viewModel.cardHolderName).addColorBorderStyle()
+                    TextField("Card Number", text: $viewModel.cardNumber).keyboardType(.numberPad).addColorBorderStyle()
+                    HStack {
+                        HStack {
+                            TextField("12", text: $viewModel.monthExpired)
+                            Text(" / ")
+                            TextField("2024", text: $viewModel.yearExpired)
+                        }.addColorBorderStyle()
+                        TextField("CVV", text: $viewModel.cvv).keyboardType(.numberPad).addColorBorderStyle()
+                    }
+                    HStack {
+                        TextField("City", text: $viewModel.city).keyboardType(.numberPad).addColorBorderStyle()
+                        TextField("Zip Code", text: $viewModel.zipCode).keyboardType(.numberPad).addColorBorderStyle()
+                    }
+                    Spacer()
+                    Button("Confirm Payment", action: {
+                        viewModel.popUpInformation = true
+                    }).addColorButtonStyle().padding(.bottom, 30)
+                }
             }
-            HStack {
-                TextField("City", text: $viewModel.city).keyboardType(.numberPad).addColorBorderStyle()
-                TextField("Zip Code", text: $viewModel.zipCode).keyboardType(.numberPad).addColorBorderStyle()
-            }
-            Spacer()
-            Button("Confirm Payment", action: {
-                viewModel.popUpInformation = true
-            }).addColorButtonStyle().padding(.bottom, 30)
         }.padding(.horizontal)
             .alert("Confirm Information Card", isPresented: $viewModel.popUpInformation) {
                 Button("Ok", action: {

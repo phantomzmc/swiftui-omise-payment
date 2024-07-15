@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-@main
-struct omise_ios_payment_funApp: App {
+@main struct omise_ios_payment_funApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

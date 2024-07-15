@@ -16,6 +16,9 @@
 		19701F982C43282100B083AC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 19701F972C43282100B083AC /* SwiftyJSON */; };
 		19701F9B2C44099A00B083AC /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F9A2C44099A00B083AC /* CountdownView.swift */; };
 		19701F9E2C440E8600B083AC /* PaymentSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701F9D2C440E8600B083AC /* PaymentSuccess.swift */; };
+		19701FA32C4438CD00B083AC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19701FA22C4438CD00B083AC /* WebView.swift */; };
+		19F6B1882C456286002C335E /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F6B1872C456286002C335E /* WebViewModel.swift */; };
+		19F6B18B2C4562C1002C335E /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F6B18A2C4562C1002C335E /* WebViewContainer.swift */; };
 		19FAC8382C41A8C10048471D /* omise_ios_payment_funApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8372C41A8C10048471D /* omise_ios_payment_funApp.swift */; };
 		19FAC83A2C41A8C10048471D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FAC8392C41A8C10048471D /* ContentView.swift */; };
 		19FAC83C2C41A8C20048471D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FAC83B2C41A8C20048471D /* Assets.xcassets */; };
@@ -61,6 +64,9 @@
 		19701F8B2C43038100B083AC /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
 		19701F9A2C44099A00B083AC /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		19701F9D2C440E8600B083AC /* PaymentSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccess.swift; sourceTree = "<group>"; };
+		19701FA22C4438CD00B083AC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		19F6B1872C456286002C335E /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		19F6B18A2C4562C1002C335E /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
 		19FAC8342C41A8C10048471D /* omise-ios-payment-fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "omise-ios-payment-fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FAC8372C41A8C10048471D /* omise_ios_payment_funApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = omise_ios_payment_funApp.swift; sourceTree = "<group>"; };
 		19FAC8392C41A8C10048471D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +141,14 @@
 			path = Success;
 			sourceTree = "<group>";
 		};
+		19F6B1892C4562AE002C335E /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				19F6B18A2C4562C1002C335E /* WebViewContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		19FAC82B2C41A8C10048471D = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +172,7 @@
 		19FAC8362C41A8C10048471D /* omise-ios-payment-fun */ = {
 			isa = PBXGroup;
 			children = (
+				19F6B1892C4562AE002C335E /* Container */,
 				19FAC87B2C4279CD0048471D /* ViewModel */,
 				19FAC87A2C4279C70048471D /* Service */,
 				19FAC86D2C41B8DF0048471D /* Style */,
@@ -216,6 +231,7 @@
 				19FAC86A2C41B5AB0048471D /* CreditCard */,
 				19FAC8652C41AAF30048471D /* Cell */,
 				19FAC8682C41AE370048471D /* ListPaymentTypeView.swift */,
+				19701FA22C4438CD00B083AC /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,6 +292,7 @@
 			children = (
 				19FAC8802C428D5E0048471D /* CreditCardViewModel.swift */,
 				19701F7F2C42C4DF00B083AC /* PromptPayViewModel.swift */,
+				19F6B1872C456286002C335E /* WebViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -421,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19701F9E2C440E8600B083AC /* PaymentSuccess.swift in Sources */,
+				19701FA32C4438CD00B083AC /* WebView.swift in Sources */,
 				19701F9B2C44099A00B083AC /* CountdownView.swift in Sources */,
 				19701F842C42E5B300B083AC /* BaseResponse.swift in Sources */,
 				19FAC83A2C41A8C10048471D /* ContentView.swift in Sources */,
@@ -430,8 +448,10 @@
 				19701F862C42E80100B083AC /* BaseApiService.swift in Sources */,
 				19701F8C2C43038100B083AC /* SVGView.swift in Sources */,
 				19FAC8692C41AE370048471D /* ListPaymentTypeView.swift in Sources */,
+				19F6B18B2C4562C1002C335E /* WebViewContainer.swift in Sources */,
 				19FAC8382C41A8C10048471D /* omise_ios_payment_funApp.swift in Sources */,
 				19FAC8672C41AB120048471D /* CellPaymentTypeView.swift in Sources */,
+				19F6B1882C456286002C335E /* WebViewModel.swift in Sources */,
 				19FAC86C2C41B5D10048471D /* CreditCardView.swift in Sources */,
 				19FAC8752C4244E70048471D /* ButtonStyle.swift in Sources */,
 				19FAC8782C426BB60048471D /* PromptPayView.swift in Sources */,

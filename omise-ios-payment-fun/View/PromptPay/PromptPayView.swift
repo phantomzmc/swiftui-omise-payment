@@ -29,8 +29,6 @@ struct PromptPayView: View {
                             EmptyView()
                         case .pending:
                             SVGImage(url: viewModel.imageUrl!)
-                        default:
-                            SVGImage(url: viewModel.imageUrl!)
                         }
                     }
                     .onReceive(viewModel.timer) { input in

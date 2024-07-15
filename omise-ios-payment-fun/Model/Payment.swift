@@ -60,6 +60,12 @@ struct RequestCreateChargeBySource: Encodable {
     let amount: Int
 }
 
+struct RequestCreateChargeByToken: Encodable {
+    let tokenId: String
+    let currency: String
+    let amount: Int
+}
+
 enum PaymentChargeStatus: String, CodingKey {
     case success = "successful"
     case expired = "expired"
